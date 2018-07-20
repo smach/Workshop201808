@@ -2,8 +2,9 @@
 ## August 2018 Workshop
 ### Sharon Machlis
 
-This repo includes R scripts and data for an R hands-on workshop I'm giving at a newsroom in New York.
+This repo includes R scripts and data for an R hands-on workshop I'm presenting to a newsroom in New York.
 
+Here's how to install and use the files.
 
 1. Download R from [https://cran.rstudio.com/](https://cran.rstudio.com/), choosing the binary distribution for your operating system. Install it as you would any other software program.
 
@@ -45,9 +46,16 @@ and hit return or enter. That should load all the other R packages you need for 
 We'll be using the script files in the following order:
 
 * intro.R
+* eyecandy.R
+* intro2.R
 * primary_analysis.R
+
+I've got 2 additional files in there in the unlikely event there's still time left to do more. Those are
+
+* flight_delays.R
 * salaries.R
 
+You may want to play with those on your own time if (as I expect) we don't have time to go over them at the workshop.
 
 
 
