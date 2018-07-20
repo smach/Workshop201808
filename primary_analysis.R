@@ -206,7 +206,7 @@ correlation_data <- select(results_plus_demographics, Pct_Ocasio_Cortez, Median_
 cor(correlation_data)
 
 # use package corrplot to visualize
-.
+
 library(corrplot)
 my_correlation_matrix <- cor(correlation_data)
 
@@ -232,10 +232,9 @@ usethis::edit_rstudio_snippets()
 
 # and when you see some sort of match, hit tab and look what happens
 
-# requires package corrplot
-mycorrelationmatrix <- cor(mydata)
-col <- colorRampPalette(c("#BB4444", "#EE9988", "#FFFFFF", "#77AADD", "#4477AA"))
-corrplot::corrplot(mycorrelationmatrix, method="shade", shade.col=NA, tl.col="black", tl.srt=45, col=col(200), addCoef.col="black")  
+
+
+
 
 # Open the snippet folder again and look at the format of a snippet. It starts with snippet followed by the name of the snippet. All the rest of the lines are regular R code, EACH LINE INDENTED WITH A TAB. IT MUST BE A TAB. You can create variables with ${1:varname}, ${2:varname}, and so on.
 
@@ -296,7 +295,7 @@ demo_data <- demo_data %>%
    NAMELSAD = stringr::str_replace(District, "AD", "Assembly District")
   )
 
-nymap <- append_data(nymap, demo_data)
+nymap <- tamptools::append_data(nymap, demo_data)
 
 tm_shape(nymap) +
   tm_polygons("Pct_White", id = "NAMELSAD", palette = "Greens")
