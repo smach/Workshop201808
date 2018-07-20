@@ -1,0 +1,5 @@
+snippet correlation_plot
+	# requires package corrplot
+	mycorrelationmatrix <- cor(${1:mydata})
+	col <- colorRampPalette(c("#BB4444", "#EE9988", "#FFFFFF", "#77AADD", "#4477AA"))
+	corrplot::corrplot(mycorrelationmatrix, method="shade", shade.col=NA, tl.col="black", tl.srt=45, col=col(200), addCoef.col="black")  
