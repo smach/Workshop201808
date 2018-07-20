@@ -113,6 +113,7 @@ hist(mydata$reg_pay)
 
 # Get rid of scientific notation
 options(scipen = 999)
+
 hist(mydata$reg_pay)
 
 # Average & Median Full-Time Salaries BY DEPARTMENT: Filter for salaried employees paid per Annum, group by department, then summarize. na.rm means remove the entries that aren't available. R by default wants to make sure that you know there are missing values. The average of 6, 8, and not available could conceivably be anything, if "not available" actually exists but isn't in your data set.
@@ -130,8 +131,7 @@ by_department <- mydata %>%
 
 
 
-# If you need to get rid of scientific notation:
-options(scipen = 999)
+
 hist(by_department$Average_Comp)
 
 # Visualize distribution for salaried employees by department - box plots are another way to do this. Limit to a few agencies or it will be impossible to read

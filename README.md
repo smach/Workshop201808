@@ -4,6 +4,8 @@
 
 This repo includes R scripts and data for an R hands-on workshop I'm presenting to a newsroom in New York.
 
+**For more resources on learning R, please check out my recommendations at Computerworld, [https://www.computerworld.com/article/2497464/business-intelligence/top-r-language-resources-to-improve-your-data-skills.html](Top R language resources to improve your data skills).
+
 Here's how to install and use the files.
 
 1. Download R from [https://cran.rstudio.com/](https://cran.rstudio.com/), choosing the binary distribution for your operating system. Install it as you would any other software program.
@@ -50,12 +52,13 @@ We'll be using the script files in the following order:
 * intro2.R
 * primary_analysis.R
 
-I've got 2 additional files in there in the unlikely event there's still time left to do more. Those are
+I've got 2 additional files in there in the unlikely event there's still time left to do more.
 
 * flight_delays.R
-* salaries.R
+* salaries.R (from an earlier NICAR session that I updated with NY data instead of Chicago data)
 
 You may want to play with those on your own time if (as I expect) we don't have time to go over them at the workshop.
+
 
 
 
