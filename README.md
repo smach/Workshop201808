@@ -15,29 +15,22 @@ Here's how to install and use the files.
 3. Open RStudio. Type the following line of code in the bottom left panel at the `>` prompt (it may just be one large panel at the left instead of a top and bottom):
 
 ```
-install.packages("pacman")
-```
-
-and hit return or enter. This installs an external R library called pacman that's useful for installing _other_ packages.
-
-4. When that finishes, type the following line of code at the `>` prompt:
-
-```
 install.packages("usethis")
 ```
 
-and hit return or enter. As you might have guessed, that installs an external R library called usethis.
+and hit return or enter. This installs an external R library called usethis for downloading the entire workshop repository from GitHub.
 
-5. When _that_ finishes, type (or cut and paste) this code at the `>` prompt:
+
+4. When that finishes, type (or cut and paste) this code at the `>` prompt:
 
 ```
 usethis::use_course("https://github.com/smach/Workshop201808/archive/master.zip")
 ```
 This should download all the session files to your system, and create a new project for them within RStudio. You'll be asked if you want to proceed with the download (choose yes) and whether you want to subsequently delete the zip file after it's unzipped (you probably do).
 
-RStudio should now open in the directory containing your new project files. If it hasn't, find the IntroToR.Rproj file and click to open that.
+RStudio should now open in the directory containing your new project files. If it hasn't, find the Workshop201808.Rproj file and click to open that.
 
-6. At the `>` prompt in your lower left pane, type:
+5. At the `>` prompt in your lower left pane, type:
 
 ```
 source("config.R")
