@@ -4,7 +4,7 @@
 
 This repo includes R scripts and data for an R hands-on workshop I'm presenting to a newsroom in New York.
 
-**For more resources on learning R, please check out my recommendations at Computerworld, [Top R language resources to improve your data skills](https://www.computerworld.com/article/2497464/business-intelligence/top-r-language-resources-to-improve-your-data-skills.html). **
+For more resources on learning R, please check out my recommendations at Computerworld, [Top R language resources to improve your data skills](https://www.computerworld.com/article/2497464/business-intelligence/top-r-language-resources-to-improve-your-data-skills.html).
 
 Here's how to install and use the files.
 
