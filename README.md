@@ -20,8 +20,13 @@ install.packages("usethis")
 
 and hit return or enter. This installs an external R library called usethis for downloading the entire workshop repository from GitHub.
 
+4. When that finishes, do something similar but run
 
-4. When that finishes, type (or cut and paste) this code at the `>` prompt:
+```
+install.packages("tidyverse")
+```
+
+5. When _that_ finishes, type (or cut and paste) this code at the `>` prompt:
 
 ```
 usethis::use_course("https://github.com/smach/Workshop201808/archive/master.zip")
@@ -30,7 +35,7 @@ This should download all the session files to your system, and create a new proj
 
 RStudio should now open in the directory containing your new project files. If it hasn't, find the Workshop201808.Rproj file and click to open that.
 
-5. At the `>` prompt in your lower left pane, type:
+6. At the `>` prompt in your lower left pane, type:
 
 ```
 source("config.R")
