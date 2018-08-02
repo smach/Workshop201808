@@ -219,13 +219,15 @@ corrplot(my_correlation_matrix, method="shade", shade.col=NA, tl.col="black", tl
 
 #### If time: let's look at RStudio code snippets ####
 
-# Run this:
+# Go to Tools > Global Options > Code and make sure Enable code snippets is checked. Then click the edit snippets button.
 
-usethis::edit_rstudio_snippets()
+# Note: this should also work to edit the snippets, but I had some strange trouble on my husband's old machine.
+
+# usethis::edit_rstudio_snippets()
 
 # These are code snippets! 
 
-# Open the file snippet.txt. Copy and paste what's in there into the file that was opened with the edit_rstudio_snippets(). Save and close. 
+# Open the file snippet.txt. Copy and paste what's in there into the file that was opened. Save and close. 
 
 # Now type (without the # at the start) in your source window
 # correlation_plot
@@ -295,7 +297,7 @@ demo_data <- demo_data %>%
    NAMELSAD = stringr::str_replace(District, "AD", "Assembly District")
   )
 
-nymap <- tamptools::append_data(nymap, demo_data)
+nymap <- tmaptools::append_data(nymap, demo_data)
 
 tm_shape(nymap) +
   tm_polygons("Pct_White", id = "NAMELSAD", palette = "Greens")

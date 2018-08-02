@@ -26,21 +26,18 @@ dygraph(JPMorganChase$JPM.Adjusted)
 
 
 
-library(tidyquant)
-
-sp500 <- tq_index("SP500")
-dow <- tq_index("DOW")
-
 #### Help! ####
 
 # How to get help for a package
-help(package = "tidyquant")
+help(package = "quantmod")
 
 # How to get help for a function
-?tq_index
+?barChart
 
 # If you're not sure of the exact function name: ??
-??tq_
+??getsymbol 
+
+# Note that R is case sensitive. getsymbols is not the same as getSymbols, but ?? will look for both.
 
 # Some packages have "vignettes," which are detailed write-ups of how to use a package. We saw a link to "User guides, package vignettes and other documentation" with help(package = "tidyquant"). You can browse all the vignettes on your system with
 
